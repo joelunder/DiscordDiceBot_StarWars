@@ -1,0 +1,21 @@
+{
+  "name": "discorddicebot_starwars",
+  "version": "0.0.0",
+  "description": "Connect to Discord and roll dice. Specifically the various specialty dice for Fantasy Flight Games' various Star Wars RPGs.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Delmain <the.delmain@gmail.com>",
+  "license": "MIT"
+}
