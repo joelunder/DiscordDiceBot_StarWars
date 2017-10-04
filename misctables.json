@@ -1,0 +1,26 @@
+{
+    "shipsystems": {
+        "small": [
+            "**Support Droid** - Typically an astromech. the droid is knocked out of commission until it can be repaired. If this droid is a Player Character it immediately suffers 10 strain.",
+            "**Ejection System** - The pilot and/or crew are unable to escape the ship in an emergency until this system resets or is repaired depending on the severity of the Critical Hit.",
+            "**Weapon System** - One weapon system of the attacker's choice is knocked offline.",
+            "**Sensors** - Sensor range is reduced by one range band. If the ship's sensors are already limited to close range they are knocked offline completely and the ship is effectively blind until the sensors are rebooted or repaired depending on the severity of the Critical Hit.",
+            "**Comms** - The comms are knocked offline and the ship can neither send nor receive any electronic signals or data.",
+            "**Sublight Engines** - The engines are slightly damaged and the ship's speed is reduced by 1 point.",
+            "**Hyperdrive** - Either the hyperdrive or navicomputer are damaged and the ship cannot make the jump to hyperspace.",
+            "**Shields** - The ship's defense is reduced by 1 point in all defense zones."
+        ],
+        "large": [
+            "**Landing Gear** - The ship's landing gear is stuck. Any attempt to land a ship that cannot deploy its landing gear results in two points of hull trauma and 2 points of system strain. This only applies to ships of silhouette 5 or less; anything larger is unable to enter a planet's atmosphere.",
+            "**Weapon System** - One weapon system of the attacker's choice is knocked offline.",
+            "**Sensors** - Sensor range is reduced by one range band. If the ship's sensors are already limited to close range they are knocked offline completely and the ship is effectively blind until the sensors are rebooted or repaired depending on the severity of the Critical Hit.",
+            "**Comms** - The comms are knocked offline and the ship can neither send nor receive any electronic signals or data.",
+            "**Sublight Engines** - The engines are slightly damaged and the ship's speed is reduced by 1 point.",
+            "**Hyperdrive** - Either the hyperdrive or navicomputer are damaged and the ship cannot make the jump to hyperspace.",
+            "**Shields** - The ship's defense is reduced by 1 point in all defense zones.",
+            "**Landing Bay** - One of the vessel's landing bays is knocked out of commission. The severity of the damage is ultimately left to the Game Master's discretion and could result in anything from a temporary inability to launch or recover ships from this bay to a failure of the docking bay shield and a total decompression of the entire compartment.",
+            "**Cargo Hold** - The ship is hulled and one of the cargo holds is exposed to vacuum. Cargo may be damaged or lost and anyone in the cargo hold takes damage according to the Game Master's discretion.",
+            "**Bridge** - The bridge is damaged. No starship maneuvers or starship actions may be executed aboard the ship until the damage is repaired. In addition the ship continues on its course at its current speed and cannot be stopped or its course changed until the damage is fixed."
+        ]
+    }
+}

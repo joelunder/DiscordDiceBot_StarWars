@@ -1,0 +1,522 @@
+{
+  "crit": [
+    {
+      "minRange": 1,
+      "maxRange": 5,
+      "severity": 1,
+      "title": "Minor Nick",
+      "desc": "The target suffers 1 strain."
+    },
+    {
+      "minRange": 6,
+      "maxRange": 10,
+      "severity": 1,
+      "title": "Slowed Down",
+      "desc": "The target can only act during the last allied Initiative slot on his next turn."
+    },
+    {
+      "minRange": 11,
+      "maxRange": 15,
+      "severity": 1,
+      "title": "Sudden Jolt",
+      "desc": "The target drops whatever is in hand."
+    },
+    {
+      "minRange": 16,
+      "maxRange": 20,
+      "severity": 1,
+      "title": "Distracted",
+      "desc": "The target cannot perform a free maneuver during his next turn."
+    },
+    {
+      "minRange": 21,
+      "maxRange": 25,
+      "severity": 1,
+      "title": "Off-Balance",
+      "desc": "Add 1S to the target's next skill check."
+    },
+    {
+      "minRange": 26,
+      "maxRange": 30,
+      "severity": 1,
+      "title": "Discouraging Wound",
+      "desc": "Flip one light side Destiny Point to a dark side Destiny Point (reverse if NPC)."
+    },
+    {
+      "minRange": 31,
+      "maxRange": 35,
+      "severity": 1,
+      "title": "Stunned",
+      "desc": "The target is staggered until the end of his next turn."
+    },
+    {
+      "minRange": 36,
+      "maxRange": 40,
+      "severity": 1,
+      "title": "Stinger",
+      "desc": "Increase difficulty of next check by one."
+    },
+    {
+      "minRange": 41,
+      "maxRange": 45,
+      "severity": 2,
+      "title": "Bowled Over",
+      "desc": "The target is knocked prone and suffers 1 strain."
+    },
+    {
+      "minRange": 46,
+      "maxRange": 50,
+      "severity": 2,
+      "title": "Head Ringer",
+      "desc": "The target increases the difficulty of all Intellect and Cunning checks by one until the end of the encounter."
+    },
+    {
+      "minRange": 51,
+      "maxRange": 55,
+      "severity": 2,
+      "title": "Fearsome Wound",
+      "desc": "The target increases the difficulty of all Presence and Willpower checks by one until the end of the encounter."
+    },
+    {
+      "minRange": 56,
+      "maxRange": 60,
+      "severity": 2,
+      "title": "Agonizing Wound",
+      "desc": "The target increases the difficulty of all Brawn and Agility checks by one until the end of the encounter."
+    },
+    {
+      "minRange": 61,
+      "maxRange": 65,
+      "severity": 2,
+      "title": "Slightly Dazed",
+      "desc": "The target is disoriented until the end of the encounter."
+    },
+    {
+      "minRange": 66,
+      "maxRange": 70,
+      "severity": 2,
+      "title": "Scattered Senses",
+      "desc": "The target removes all B from skill checks until the end of the encounter."
+    },
+    {
+      "minRange": 71,
+      "maxRange": 75,
+      "severity": 2,
+      "title": "Hamstrung",
+      "desc": "The target loses his free maneuver until the end of the encounter."
+    },
+    {
+      "minRange": 76,
+      "maxRange": 80,
+      "severity": 2,
+      "title": "Overpowered",
+      "desc": "The target leaves himself open, and the attacker may immediately attempt another free attack against him. using the exact same pool as the original attack."
+    },
+    {
+      "minRange": 81,
+      "maxRange": 85,
+      "severity": 2,
+      "title": "Winded",
+      "desc": "Until the end of the encounter, the target cannot voluntarily suffer strain to activate any abilities or gain additional maneuvers."
+    },
+    {
+      "minRange": 86,
+      "maxRange": 90,
+      "severity": 2,
+      "title": "Compromised",
+      "desc": "Increase difficulty of all skill checks by one until the end of the encounter."
+    },
+    {
+      "minRange": 91,
+      "maxRange": 95,
+      "severity": 3,
+      "title": "At the Brink",
+      "desc": "The target suffers 1 strain each time he performs an action."
+    },
+    {
+      "minRange": 96,
+      "maxRange": 100,
+      "severity": 3,
+      "title": "Crippled",
+      "desc": "One of the target's limbs (selected by the GM) is crippled until healed or replaced. Increase difficulty of all checks that require use of that limb by one."
+    },
+    {
+      "minRange": 101,
+      "maxRange": 105,
+      "severity": 3,
+      "title": "Maimed",
+      "desc": "One of the target's limbs (selected by the GM) is permanently lost. Unless the target has a cybernetic replacement, the target cannot perform actions that would require the use of that limb. All other actions gain 1S."
+    },
+    {
+      "minRange": 106,
+      "maxRange": 110,
+      "severity": 3,
+      "title": "Horrific Injury",
+      "desc": "Roll to determine an attribute. Until this Critical Injury is healed, treat that characteristic as 1 point lower.",
+      "additionalRolls": [
+        {
+          "size": 10,
+          "name": "Attribute",
+          "table": [
+            {
+              "minRange": 1,
+              "maxRange": 3,
+              "text": "Brawn"
+            },
+            {
+              "minRange": 4,
+              "maxRange": 6,
+              "text": "Agility"
+            },
+            {
+              "minRange": 7,
+              "maxRange": 7,
+              "text": "Intellect"
+            },
+            {
+              "minRange": 8,
+              "maxRange": 8,
+              "text": "Cunning"
+            },
+            {
+              "minRange": 9,
+              "maxRange": 9,
+              "text": "Presence"
+            },
+            {
+              "minRange": 10,
+              "maxRange": 10,
+              "text": "Willpower"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "minRange": 111,
+      "maxRange": 115,
+      "severity": 3,
+      "title": "Temporarily Lame",
+      "desc": "Until this Critical Injury is healed, the target cannot perform more than one maneuver during his turn."
+    },
+    {
+      "minRange": 116,
+      "maxRange": 120,
+      "severity": 3,
+      "title": "Blinded",
+      "desc": "The target can no longer see. Upgrade the difficulty of all checks twice. Upgrade the difficulty of Perception and Vigilance checks three times."
+    },
+    {
+      "minRange": 121,
+      "maxRange": 125,
+      "severity": 3,
+      "title": "Knocked Senseless",
+      "desc": "The target is staggered for the remainder of the encounter."
+    },
+    {
+      "minRange": 126,
+      "maxRange": 130,
+      "severity": 4,
+      "title": "Gruesome Injury",
+      "desc": "Roll to determine an attribute. That characteristic is permanently reduced by 1. to a minimum of 1.",
+      "additionalRolls": [
+        {
+          "size": 10,
+          "name": "Attribute",
+          "table": [
+            {
+              "minRange": 1,
+              "maxRange": 3,
+              "text": "Brawn"
+            },
+            {
+              "minRange": 4,
+              "maxRange": 6,
+              "text": "Agility"
+            },
+            {
+              "minRange": 7,
+              "maxRange": 7,
+              "text": "Intellect"
+            },
+            {
+              "minRange": 8,
+              "maxRange": 8,
+              "text": "Cunning"
+            },
+            {
+              "minRange": 9,
+              "maxRange": 9,
+              "text": "Presence"
+            },
+            {
+              "minRange": 10,
+              "maxRange": 10,
+              "text": "Willpower"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "minRange": 131,
+      "maxRange": 140,
+      "severity": 4,
+      "title": "Bleeding Out",
+      "desc": "Every round, the target suffers 1 wound and 1 strain at the beginning of his turn. For every 5 wounds he suffers beyond his wound threshold, he suffers 1 additional Critical Injury. Roll on the chart, suffering the injury (if he suffers this result a second time due to this, roll again)."
+    },
+    {
+      "minRange": 141,
+      "maxRange": 150,
+      "severity": 4,
+      "title": "The End is Nigh",
+      "desc": "The target will die after the last Initiative slot during the next round."
+    },
+    {
+      "minRange": 151,
+      "maxRange": 2147483647,
+      "severity": 10,
+      "title": "Dead",
+      "desc": "Complete, obliterated death."
+    }
+  ],
+  "shipcrit": [
+    {
+      "minRange": 1,
+      "maxRange": 9,
+      "severity": 1,
+      "title": "Mechanical Stress",
+      "desc": "The ship or vehicle suffers 1 point of system strain."
+    },
+    {
+      "minRange": 10,
+      "maxRange": 18,
+      "severity": 1,
+      "title": "Jostled",
+      "desc": "A small explosion or impact rocks the vehicle. All crew members suffer 1 strain and are disoriented for one round."
+    },
+    {
+      "minRange": 19,
+      "maxRange": 27,
+      "severity": 1,
+      "title": "Losing Power to Shields",
+      "desc": "Decrease defense in affected defense zone by 1 until the Critical Hit is repaired. If the ship or vehicle has no defense, suffer 1 point of system strain."
+    },
+    {
+      "minRange": 28,
+      "maxRange": 36,
+      "severity": 1,
+      "title": "Knocked Off Course",
+      "desc": "A particularly strong blast or impact sends the ship or vehicle careening off in a new direction. On his next turn, the pilot cannot execute any maneuvers and must make a Piloting check to regain control. The difficulty of this check depends on his current speed."
+    },
+    {
+      "minRange": 37,
+      "maxRange": 45,
+      "severity": 1,
+      "title": "Tailspin",
+      "desc": "All firing from the ship or vehicle suffers 2S until the end of the pilot's next turn. All crewmembers are immobilized until the end of the pilot's next turn."
+    },
+    {
+      "minRange": 46,
+      "maxRange": 54,
+      "severity": 1,
+      "title": "Component Hit",
+      "desc": "One component of the attacker's choice is knocked offline and is rendered inoperable until the end of the following round.",
+      "additionalRolls": [
+        {
+          "size": 8,
+          "name": "Small Ship",
+          "table": [
+            {
+              "minRange": 1,
+              "maxRange": 1,
+              "text": "Support Droid - Typically an astromech. the droid is knocked out of commission until it can be repaired. If this droid is a Player Character, it immediately suffers 10 strain."
+            },
+            {
+              "minRange": 2,
+              "maxRange": 2,
+              "text": "Ejection System - The pilot and/or crew are unable to escape the ship in an emergency until this system resets or is repaired, depending on the severity of the Critical Hit."
+            },
+            {
+              "minRange": 3,
+              "maxRange": 3,
+              "text": "Weapon System - One weapon system of the attacker's choice is knocked offline."
+            },
+            {
+              "minRange": 4,
+              "maxRange": 4,
+              "text": "Sensors - Sensor range is reduced by one range band. If the ship's sensors are already limited to close range, they are knocked offline completely, and the ship is effectively blind until the sensors are rebooted or repaired, depending on the severity of the Critical Hit"
+            },
+            {
+              "minRange": 5,
+              "maxRange": 5,
+              "text": "Comms - The comms are knocked offline, and the ship can neither send nor receive any electronic signals or data."
+            },
+            {
+              "minRange": 6,
+              "maxRange": 6,
+              "text": "Sublight Engines - The engines are slightly damaged and the ship's speed is reduced by 1 point."
+            },
+            {
+              "minRange": 7,
+              "maxRange": 7,
+              "text": "Hyperdrive - Either the hyperdrive or navicomputer are damaged, and the ship cannot make the jump to hyperspace."
+            },
+            {
+              "minRange": 8,
+              "maxRange": 8,
+              "text": "Shields - The ship's defense is reduced by 1 point in all defense zones."
+            }
+          ]
+        },
+        {
+          "size": 10,
+          "name": "Large Ship",
+          "table": [
+            {
+              "minRange": 1,
+              "maxRange": 1,
+              "text": "Landing Gear - The ship's landing gear is stuck. Any attempt to land a ship that cannot deploy its landing gear results in two points of hull trauma and 2 points of system strain. This only applies to ships of silhouette 5 or less; anything larger is unable to enter a planet's atmosphere."
+            },
+            {
+              "minRange": 2,
+              "maxRange": 2,
+              "text": "Weapon System - One weapon system of the attacker's choice is knocked offline."
+            },
+            {
+              "minRange": 3,
+              "maxRange": 3,
+              "text": "Sensors - Sensor range is reduced by one range band. If the ship's sensors are already limited to close range, they are knocked offline completely, and the ship is effectively blind until the sensors are rebooted or repaired, depending on the severity of the Critical Hit"
+            },
+            {
+              "minRange": 4,
+              "maxRange": 4,
+              "text": "Comms - The comms are knocked offline, and the ship can neither send nor receive any electronic signals or data."
+            },
+            {
+              "minRange": 5,
+              "maxRange": 5,
+              "text": "Sublight Engines - The engines are slightly damaged and the ship's speed is reduced by 1 point."
+            },
+            {
+              "minRange": 6,
+              "maxRange": 6,
+              "text": "Hyperdrive - Either the hyperdrive or navicomputer are damaged, and the ship cannot make the jump to hyperspace."
+            },
+            {
+              "minRange": 7,
+              "maxRange": 7,
+              "text": "Shields - The ship's defense is reduced by 1 point in all defense zones."
+            },
+            {
+              "minRange": 8,
+              "maxRange": 8,
+              "text": "Landing Bay - One of the vessel's landing bays is knocked out of commission. The severity of the damage is ultimately left to the Game Master's discretion, and could result in anything from a temporary inability to launch or recover ships from this bay, to a failure of the docking bay shield and a total decompression of the entire compartment."
+            },
+            {
+              "minRange": 9,
+              "maxRange": 9,
+              "text": "Cargo Hold - The ship is hulled, and one of the cargo holds is exposed to vacuum. Cargo may be damaged or lost, and anyone in the cargo hold takes damage according to the Game Master's discretion."
+            },
+            {
+              "minRange": 10,
+              "maxRange": 10,
+              "text": "Bridge - The bridge is damaged. No starship maneuvers or starship actions may be executed aboard the ship until the damage is repaired. In addition, the ship continues on its course at its current speed, and cannot be stopped or its course changed until the damage is fixed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "minRange": 55,
+      "maxRange": 63,
+      "severity": 1,
+      "title": "Shields Failing",
+      "desc": "Reduce defense in all defense zones by 1 point until the Critical Hit is repaired. If the ship or vehicle has no defense, suffer 2 points of system strain."
+    },
+    {
+      "minRange": 64,
+      "maxRange": 72,
+      "severity": 1,
+      "title": "Navicomputer Failure",
+      "desc": "The navicomputer (or in the case of a ship without a navicomputer. its R2 unit) fails, and the ship cannot make the jump to hyperspace until the Critical Hit is repaired. If the ship or vehicle is without a hyperdrive. the vehicle or ship's navigation systems fail, leaving it flying or driving blind, unable to tell where it is or where it's going."
+    },
+    {
+      "minRange": 73,
+      "maxRange": 81,
+      "severity": 1,
+      "title": "Power Fluctuations",
+      "desc": "The ship or vehicle is beset by random power surges and outages The pilot cannot voluntarily inflict system strain on the ship (to gain an extra starship maneuver, for example) until this Critical Hit is repaired."
+    },
+    {
+      "minRange": 82,
+      "maxRange": 90,
+      "severity": 1,
+      "title": "Shields Down",
+      "desc": "Decrease defense in affected defense zone to 0, and decrease defense in all other defense zones by 1 until this Critical Hit is repaired. While the defense of the affected defense zone cannot be restored until the Critical Hit is repaired, defense from other zones can be assigned to protect that defense zone as usual. If the ship or vehicle is without defense, suffer 4 points of system strain."
+    },
+    {
+      "minRange": 91,
+      "maxRange": 99,
+      "severity": 1,
+      "title": "Engine Damaged",
+      "desc": "The ship or vehicle's maximum speed is reduced by 1 point, to a minimum of 1, until the Critical Hit is repaired."
+    },
+    {
+      "minRange": 100,
+      "maxRange": 108,
+      "severity": 1,
+      "title": "Shield Overload",
+      "desc": "The ship's shields completely fail. Decrease the defense of all defense zones to 0. This Critical Hit cannot be repaired until the end of the encounter, and the ship suffers 2 points of system strain. If the ship or vehicle is without defense, reduce armor by 1 until the Critical Hit is repaired."
+    },
+    {
+      "minRange": 109,
+      "maxRange": 117,
+      "severity": 1,
+      "title": "Engines Down",
+      "desc": "The ship or vehicle's maximum speed is reduced to 0 until the Critical Hit is repaired, although it continues on its present course thanks to momentum. In addition, the ship cannot execute any maneuvers until the Critical Hit is repaired."
+    },
+    {
+      "minRange": 118,
+      "maxRange": 126,
+      "severity": 1,
+      "title": "Major System Failure",
+      "desc": "One component of the attacker's choice is heavily damaged and is inoperable until the Critical Hit is repaired. Use !shipsystems <small/large> for a list of systems by silhouette."
+    },
+    {
+      "minRange": 127,
+      "maxRange": 133,
+      "severity": 1,
+      "title": "Major Hull Breach",
+      "desc": "A huge, gaping tear is torn in the ship's hull, and the ship depressurizes. For ships and vehicles of silhouette 4 and smaller, the entire ship depressurizes in a number of rounds equal to the ship's silhouette. Ships and vehicles of silhouette 5 and larger tend to be highly compartmentalized and have many safeguards against depressurization. These ships don't completely depressurize. but parts do (the specifics regarding which parts depressurize is up to the GM; however, each section of the ship or vehicle that does lose air does so in a number of rounds equal to the vehicle's silhouette). Vehicles and ships operating in an atmosphere can better handle this Critical Hit. However, the huge tear still inflicts penalties, causing the vehicle to suffer the Destabilized Critical Hit instead (Reduce the vehicle's hull trauma threshold and stress strain threshold to half their original values until repaired)."
+    },
+    {
+      "minRange": 134,
+      "maxRange": 138,
+      "severity": 1,
+      "title": "Destabilized",
+      "desc": "The ship or vehicle's structural integrity is seriously damaged. Reduce the ship or vehicle's hull trauma threshold and system strain threshold to half their original values until repaired."
+    },
+    {
+      "minRange": 139,
+      "maxRange": 144,
+      "severity": 1,
+      "title": "Fire!",
+      "desc": "Fire rages through the ship. The ship or vehicle immediately takes 2 points of system strain, and anyone caught in the fire takes damage as discussed on page AoR 228. A fire can be put out with some quick thinking and appropriate skill or Vigilance and/or Cool checks at the Game Master's discretion. Once going, a fire takes one round per 2 of the ship's silhouette points to put out."
+    },
+    {
+      "minRange": 145,
+      "maxRange": 153,
+      "severity": 1,
+      "title": "Breaking Up",
+      "desc": "The vehicle or ship has suffered so much damage that it begins to come apart at its seams, breaking up and disintegrating around the crew. At the end of the following round, the ship is completely destroyed, and the surrounding environment is littered with debris. Anyone aboard the ship or vehicle has one round to get to an escape pod, bail out, or dive for the nearest hatch before they are lost."
+    },
+    {
+      "minRange": 154,
+      "maxRange": 2147483647,
+      "severity": 1,
+      "title": "Vaporized",
+      "desc": "The ship or vehicle is completely destroyed, consumed in a particularly large and dramatic fireball. Nothing survives."
+    }
+  ]
+}

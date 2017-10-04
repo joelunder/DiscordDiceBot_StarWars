@@ -1,5 +1,9 @@
 const dice = require('./dice.js');
 const channels = require('./channels.js');
+const criticals = require('./criticals.js');
+
+const fs = require('fs');
+const tables = JSON.parse(fs.readFileSync('misctables.json', 'utf8'));
 
 const commands = [
   {
@@ -10,7 +14,7 @@ const commands = [
       } else {
         var helpCommand = args.shift().toLowerCase();
         var foundCommand = commands.find(c => c.command === helpCommand)
-        if(foundCommand) {
+        if (foundCommand) {
           environment.message.channel.send(foundCommand.help);
         } else {
           environment.message.channel.send(`Command not found: ${helpCommand}`)
@@ -48,7 +52,7 @@ Dice abbreviations:
 + C - Challenge
 + F - Force
 
-Combine the number of dice and the abbreviation for their type in a single block (i.e. "!roll 3P1A1C1D"). The final result (after all cancellations) will be displayed. All Success/Failure from Triumph/Despair results are already added and calculated in.`
+Combine the number of dice and the abbreviation for their type in a single block (e.g. "!roll 3P1A1C1D"). The final result (after all cancellations) will be displayed. All Success/Failure from Triumph/Despair results are already added and calculated in.`
   },
   {
     "command": "channels",
@@ -68,6 +72,36 @@ The bot is only allowed to post to rooms that are restricted to a role that it h
         .then(m => m.edit(`Pong. Latency is ${m.createdTimestamp - environment.message.createdTimestamp}ms.`));
     },
     "help": "Ping the bot and check the current latency between the bot and the Discord server."
+  },
+  {
+    "command": "crit",
+    "process": function(environment, args) { 
+      environment.message.reply(criticals.rollCritical('crit', args))
+    },
+    "help": 'Roll on the critical hit table for enemies on foot. Enter a number to add a bonus to the roll (e.g. "!crit 15"). Use !shipcrit for critical hits against vehicles or ships.'
+  },
+  {
+    "command": "shipcrit",
+    "process": function(environment, args) { 
+      environment.message.reply(criticals.rollCritical('shipcrit', args))
+    },
+    "help": 'Roll on the critical hit table for hits against vehicles or ships. Enter a number to add a bonus to the roll (e.g. "!shipcrit 15"). Use !crit for critical hits against enemies on foot.'
+  },
+  {
+    "command": "shipsystems",
+    "process": function (environment, args) {
+      if (args.length < 1) {
+        environment.message.reply("Please specify a ship silhouette size (Small or Large).");
+      } else {
+        var size = args.shift().toLowerCase();
+        if (tables.shipsystems[size]) {
+          environment.message.channel.send("Ship Systems:\n" + tables.shipsystems[size].join('\n'));
+        } else {
+          environment.message.reply("Please specify a ship silhouette size (Small or Large).");
+        }
+      }
+    },
+    "help": "Specify a ship size and receive a list of Ship Systems. Useful for deciding on system failures after critical hits."
   }
 ];
 
