@@ -1,69 +1,169 @@
 {
-    "types": {
-        "B": {
-            "results": ["-", "-", "S", "SA", "AA", "A"]
-        },
-        "S": {
-            "results": ["-", "-", "F", "F", "T", "T"]
-        },
-        "A": {
-            "results": ["-", "S", "S", "SS", "A", "A", "SA", "AA"]
-        },
-        "D": {
-            "results": ["-", "F", "FF", "T", "T", "T", "TT", "FT"]
-        },
-        "P": {
-            "results": ["-", "S", "S", "S", "S", "A", "SA", "SA", "SA", "AA", "AA", "U"]
-        },
-        "C": {
-            "results": ["-", "F", "F", "FF", "FF", "T", "T", "FT", "FT", "TT", "TT", "P"]
-        },
-        "F": {
-            "results": ["D", "D", "D", "D", "D", "D", "DD", "L", "L", "LL", "LL", "LL"]
-        }
+  "types": {
+    "B": {
+      "results": [
+        "-",
+        "-",
+        "S",
+        "SA",
+        "AA",
+        "A"
+      ],
+      "successAxis": true
     },
-    "symbols":
-    {
-        "-": { 
-            "hidden": true
-        },
-        "S": { 
-            "name": { "singular": "success", "plural": "successes" },
-            "counters": "F",
-            "emoji": "success"
-        },
-        "A": { 
-            "name": { "singular": "advantage", "plural": "advantage" },
-            "counters": "T",
-            "emoji": "advantage"
-        },
-        "F": { 
-            "name": { "singular": "failure", "plural": "failures" },
-            "counters": "S",
-            "emoji": "failure"
-        },
-        "T": { 
-            "name": { "singular": "threat", "plural": "threat" },
-            "counters": "A",
-            "emoji": "threat"
-        },
-        "U": { 
-            "name": { "singular": "triumph", "plural": "triumph" },
-            "adds": "S",
-            "emoji": "triumph"
-        },
-        "P": { 
-            "name": { "singular": "despair", "plural": "despair" },
-            "adds": "F",
-            "emoji": "despair"
-        },
-        "L": { 
-            "name": { "singular": "Light Side Point", "plural": "Light Side Points" },
-            "emoji": "lightsidepoint"
-        },
-        "D": { 
-            "name": { "singular": "Dark Side Point", "plural": "Dark Side Points" },
-            "emoji": "darksidepoint"          
-        }
+    "S": {
+      "results": [
+        "-",
+        "-",
+        "F",
+        "F",
+        "T",
+        "T"
+      ],
+      "successAxis": true
+    },
+    "A": {
+      "results": [
+        "-",
+        "S",
+        "S",
+        "SS",
+        "A",
+        "A",
+        "SA",
+        "AA"
+      ],
+      "successAxis": true
+    },
+    "D": {
+      "results": [
+        "-",
+        "F",
+        "FF",
+        "T",
+        "T",
+        "T",
+        "TT",
+        "FT"
+      ],
+      "successAxis": true
+    },
+    "P": {
+      "results": [
+        "-",
+        "S",
+        "S",
+        "S",
+        "S",
+        "A",
+        "SA",
+        "SA",
+        "SA",
+        "AA",
+        "AA",
+        "U"
+      ],
+      "successAxis": true
+    },
+    "C": {
+      "results": [
+        "-",
+        "F",
+        "F",
+        "FF",
+        "FF",
+        "T",
+        "T",
+        "FT",
+        "FT",
+        "TT",
+        "TT",
+        "P"
+      ],
+      "successAxis": true
+    },
+    "F": {
+      "results": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "D",
+        "DD",
+        "L",
+        "L",
+        "LL",
+        "LL",
+        "LL"
+      ]
     }
+  },
+  "symbols": {
+    "-": {
+      "hidden": true
+    },
+    "S": {
+      "name": {
+        "singular": "success",
+        "plural": "successes"
+      },
+      "counters": "F",
+      "emoji": "success"
+    },
+    "A": {
+      "name": {
+        "singular": "advantage",
+        "plural": "advantage"
+      },
+      "counters": "T",
+      "emoji": "advantage"
+    },
+    "F": {
+      "name": {
+        "singular": "failure",
+        "plural": "failures"
+      },
+      "counters": "S",
+      "emoji": "failure"
+    },
+    "T": {
+      "name": {
+        "singular": "threat",
+        "plural": "threat"
+      },
+      "counters": "A",
+      "emoji": "threat"
+    },
+    "U": {
+      "name": {
+        "singular": "triumph",
+        "plural": "triumph"
+      },
+      "adds": "S",
+      "emoji": "triumph"
+    },
+    "P": {
+      "name": {
+        "singular": "despair",
+        "plural": "despair"
+      },
+      "adds": "F",
+      "emoji": "despair"
+    },
+    "L": {
+      "name": {
+        "singular": "Light Side Point",
+        "plural": "Light Side Points"
+      },
+      "emoji": "lightsidepoint"
+    },
+    "D": {
+      "name": {
+        "singular": "Dark Side Point",
+        "plural": "Dark Side Points"
+      },
+      "emoji": "darksidepoint"
+    }
+  }
 }
