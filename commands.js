@@ -38,7 +38,7 @@ For help with a specific command, type !help <command>`);
       let diceSet = args.shift();
       let title = args.join(` `);
       let msg = title.length > 0 ? `${title}:` : ``;
-      msg += dice(diceSet, environment.guilds[message.guild.id].emoji);
+      msg += dice(diceSet, environment.guilds.get(message.guild.id).emoji);
       message.reply(msg);
     },
     help: `Roll a number of FFG Star Wars dice and calculate the results.

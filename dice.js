@@ -64,7 +64,7 @@ function DieRoller(dice, emoji) {
       if (totals[sym] > 0) {
         var symConfig = diceConfig.symbols[sym];
         // in emoji
-        if (true) {
+        if (emoji.has(symConfig.emoji)) {
           if (totals[sym] > 8) {
             combined += `${emoji.get(symConfig.emoji)} . . . `;
           } else {
