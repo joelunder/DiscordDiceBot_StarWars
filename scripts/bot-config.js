@@ -10,7 +10,7 @@ sym = null;
 const Environment = function(userId) {
   this.userId = userId;
   this.guilds = new Map();
-}
+};
 
 const Guild = function (guild, userId) {
   this.id = guild.id;
@@ -25,7 +25,7 @@ const Guild = function (guild, userId) {
     if (emoji === null) return;
     this.emoji.set(symbol, emoji.toString());
   }, this);
-}
+};
 
 Guild.prototype.removeEmoji = function(oldEmoji) {
   this.emoji.forEach((curEmoji, curSymbol) => {
@@ -34,7 +34,7 @@ Guild.prototype.removeEmoji = function(oldEmoji) {
       this.emoji.delete(curSymbol);
     }
   });
-}
+};
 
 Guild.prototype.checkEmoji = function(newEmoji) {
   symbols.forEach(symbol => {
@@ -44,7 +44,7 @@ Guild.prototype.checkEmoji = function(newEmoji) {
       this.emoji.set(symbol, newEmoji.toString());
     }
   });
-}
+};
 
 Guild.prototype.updateEmoji = function(oldEmoji, newEmoji) {
   this.removeEmoji(oldEmoji);

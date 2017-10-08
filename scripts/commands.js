@@ -8,7 +8,7 @@ const tables = JSON.parse(fs.readFileSync(path.join(__dirname, `..`, `data`, `mi
 
 const logReason = function(reason) {
   console.log(reason);
-}
+};
 
 const commands = [
   {
@@ -18,7 +18,7 @@ const commands = [
         message.channel.send(`This is a bot that will help automate some of the fiddly bits of running a game in FFG's Star Wars RPG games. Use !commands to get a list of commands.`);
       } else {
         let helpCommand = args.shift().toLowerCase();
-        let foundCommand = commands.find(c => c.command === helpCommand)
+        let foundCommand = commands.find(c => c.command === helpCommand);
         if (foundCommand) {
           message.channel.send(foundCommand.help)
             .catch(logReason);

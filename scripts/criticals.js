@@ -9,7 +9,7 @@ module.exports = {
     if (args.length >= 1) {
       let mod = parseInt(args.shift());
       if (!isNaN(mod)) {
-        critValue += mod
+        critValue += mod;
       }
     }
     critValue += Math.floor(Math.random() * 100) + 1;
@@ -30,4 +30,4 @@ module.exports = {
   
     return `Crit Roll: ${critValue}\n${critsSuffered.join(`\n`)}`;
   }
-}
+};

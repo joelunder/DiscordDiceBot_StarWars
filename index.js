@@ -17,7 +17,7 @@ client.on(`ready`, () => {
     environment.guilds.set(guild.id, new BotConfig.Guild(guild, environment.userId));
   });
 
-  console.log(`Configuration complete, bot ready.`)
+  console.log(`Configuration complete, bot ready.`);
 });
 
 client.on(`guildMemberUpdate`, (o, n) => {

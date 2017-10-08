@@ -20,4 +20,4 @@ module.exports = {
     let perms = channel.permissionOverwrites.filter(p => p.allow === 3072 && p.type === `role`).map(p => p.id);
     return perms.length > 0 && perms.some(p => roles.has(p));
   }
-}
+};

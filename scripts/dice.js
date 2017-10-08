@@ -1,8 +1,8 @@
 const fs = require(`fs`);
 const path = require(`path`);
 
-const stringRegex = /\d+[BSADPCF]/g
-const matchRegex = /(\d+)([BSADPCF])/
+const stringRegex = /\d+[BSADPCF]/g;
+const matchRegex = /(\d+)([BSADPCF])/;
 const diceTypes = new Map();
 const symbols = new Map();
 
@@ -47,7 +47,7 @@ class DicePool {
   }
 }
 
-class Symbol {
+class SymbolConfig {
   constructor(data) {
     this.name = data.name;
     this.emoji = data.emoji;
@@ -83,7 +83,7 @@ class RollTotals {
   }
 
   increment(symbol) {
-    let count = this.Totals.get(symbol)
+    let count = this.Totals.get(symbol);
     if (!isNaN(count)) {
       this.Totals.set(symbol, ++count);
     }
@@ -148,7 +148,7 @@ Object.keys(diceConfig.types).forEach(type => {
   diceTypes.set(type, new DieType(diceConfig.types[type]));
 });
 Object.keys(diceConfig.symbols).forEach(symbol => {
-  symbols.set(symbol, new Symbol(diceConfig.symbols[symbol]));
+  symbols.set(symbol, new SymbolConfig(diceConfig.symbols[symbol]));
 });
 
 module.exports = {
