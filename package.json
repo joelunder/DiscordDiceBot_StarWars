@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "make test",
-    "start": "supervisor index.js"
+    "start": "node index.js"
   },
   "author": "Delmain <the.delmain@gmail.com>",
   "license": "MIT"
