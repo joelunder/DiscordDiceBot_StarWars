@@ -54,6 +54,18 @@ client.on(`channelUpdate`, (o, n) => {
   }
 });
 
+client.on(`channelCreate`, n => {
+  if (n.type !== `text`) return; // We only care about text Channels. DMs are always allowed and Voice has no bot.
+  
+  if(Channels.channelAllowed(n, environment.guilds.get(n.guild.id).roles)) {
+    environment.guilds.get(n.guild.id).allowedChannels.add(n.id);
+  }
+});
+
+client.on(`channelDelete`, o => {
+  environment.guilds.get(o.guild.id).allowedChannels.delete(o.id);
+});
+
 client.on(`emojiUpdate`, (o, n) => {
   console.log(`event: emojiUpdate`);
   environment.guilds.get(o.guild.id).updateEmoji(o, n);
@@ -102,8 +114,6 @@ var auth = JSON.parse(fs.readFileSync(`auth.json`, `utf8`));
 client.login(auth.token);
 auth = {};
 
-client.on(`channelCreate`, () => console.log(`event: channelCreate`));
-client.on(`channelDelete`, () => console.log(`event: channelDelete`));
 client.on(`clientUserGuildSettingsUpdate`, () => console.log(`event: clientUserGuildSettingsUpdate`));
 client.on(`clientUserSettingsUpdate`, () => console.log(`event: clientUserSettingsUpdate`));
 client.on(`disconnect`, () => console.log(`event: disconnect`));
