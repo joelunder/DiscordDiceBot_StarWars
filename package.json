@@ -16,7 +16,8 @@
     "mocha": "^3.5.3"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start": "supervisor index.js"
   },
   "author": "Delmain <the.delmain@gmail.com>",
   "license": "MIT"
