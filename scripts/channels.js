@@ -7,8 +7,7 @@ module.exports = {
     let allowedChannels = new Set();
     if(roles.size > 0) {
       channels.forEach(channel => {
-        let perms = channel.permissionOverwrites.filter(p => p.allow === 3072 && p.type === `role`).map(p => p.id);
-        if(perms.length > 0 && perms.some(p => roles.has(p))) {
+        if(module.exports.channelAllowed(channel, roles)) {
           allowedChannels.add(channel.id);
         }
       });
@@ -17,7 +16,7 @@ module.exports = {
   },
 
   channelAllowed: function(channel, roles) {
-    let perms = channel.permissionOverwrites.filter(p => p.allow === 3072 && p.type === `role`).map(p => p.id);
+    let perms = channel.permissionOverwrites.filter(p => (p.allow & 3072) === 3072 && p.type === `role`).map(p => p.id);
     return perms.length > 0 && perms.some(p => roles.has(p));
   }
 };

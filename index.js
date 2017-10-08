@@ -20,6 +20,16 @@ client.on(`ready`, () => {
   console.log(`Configuration complete, bot ready.`);
 });
 
+client.on(`guildCreate`, n => {
+  console.log(`event: guildCreate`);
+  environment.guilds.set(n.id, new BotConfig.Guild(n, environment.userId));
+});
+
+client.on(`guildDelete`, o => {
+  console.log(`event: guildDelete`);
+  environment.guilds.delete(o.id);
+});
+
 client.on(`guildMemberUpdate`, (o, n) => {
   if(o.user.id === environment.userId) {
     let changed = false;
@@ -119,8 +129,6 @@ client.on(`clientUserSettingsUpdate`, () => console.log(`event: clientUserSettin
 client.on(`disconnect`, () => console.log(`event: disconnect`));
 client.on(`guildBanAdd`, () => console.log(`event: guildBanAdd`));
 client.on(`guildBanRemove`, () => console.log(`event: guildBanRemove`));
-client.on(`guildCreate`, () => console.log(`event: guildCreate`));
-client.on(`guildDelete`, () => console.log(`event: guildDelete`));
 client.on(`guildUnavailable`, () => console.log(`event: guildUnavailable`));
 client.on(`guildUpdate`, () => console.log(`event: guildUpdate`));
 client.on(`roleCreate`, () => console.log(`event: roleCreate`));
