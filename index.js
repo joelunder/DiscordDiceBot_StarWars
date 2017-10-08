@@ -2,10 +2,9 @@ const Discord = require(`discord.js`);
 const client = new Discord.Client();
 
 const fs = require(`fs`);
-const dice = require(`./dice.js`);
-const Commands = require(`./commands.js`);
-const Channels = require(`./channels.js`);
-const BotConfig = require(`./botConfig.js`);
+const Commands = require(`./scripts/commands.js`);
+const Channels = require(`./scripts/channels.js`);
+const BotConfig = require(`./scripts/bot-config.js`);
 
 var environment;
 
@@ -92,6 +91,10 @@ client.on(`error`, error => {
   console.log(`event: error`);
   console.log(error);
 });
+client.on(`warn`, warn => {
+  console.log(`event: warn`);
+  console.log(warn);
+});
 
 console.log("--------------------------------------------------------------");
 
@@ -114,4 +117,3 @@ client.on(`roleCreate`, () => console.log(`event: roleCreate`));
 client.on(`roleUpdate`, () => console.log(`event: roleUpdate`));
 client.on(`userNoteUpdate`, () => console.log(`event: userNoteUpdate`));
 client.on(`userUpdate`, () => console.log(`event: userUpdate`));
-client.on(`warn`, () => console.log(`event: warn`));

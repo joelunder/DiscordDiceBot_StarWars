@@ -1,5 +1,6 @@
 const fs = require(`fs`);
-const criticals = JSON.parse(fs.readFileSync(`criticals.json`, `utf8`));
+const path = require(`path`);
+const criticals = JSON.parse(fs.readFileSync(path.join(__dirname, `..`, `data`, `criticals.json`), `utf8`));
 
 module.exports = {
   rollCritical: function (type, args) {
